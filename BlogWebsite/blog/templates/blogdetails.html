@@ -1,0 +1,10 @@
+{% extends "master.html" %}
+
+{% block content %}
+    <h2>{{ post.title }}</h2>
+    <p><strong>التصنيف:</strong> {{ post.category.name }}</p>
+    <p><strong>المحتوى:</strong> {{ post.content }}</p>
+    <p><strong>تاريخ النشر:</strong> {{ post.date_published }}</p>
+    <hr>
+    <p><a href="/blogs/">العودة إلى جميع التدوينات</a></p>
+{% endblock %}

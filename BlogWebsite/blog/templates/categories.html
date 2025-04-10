@@ -1,0 +1,10 @@
+{% extends "master.html" %}
+
+{% block content %}
+    <h2>جميع التصنيفات</h2>
+    <ul>
+        {% for category in categories %}
+            <li>{{ category.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

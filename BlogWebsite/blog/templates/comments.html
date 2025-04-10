@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block content %}
+    <h2>جميع التعليقات</h2>
+    <ul>
+        {% for comment in comments %}
+            <li>
+                <strong>التدوينة:</strong> {{ comment.post.title }}<br>
+                <strong>المستخدم:</strong> {{ comment.user.first_name }}<br>
+                <strong>التعليق:</strong> {{ comment.content }}
+            </li>
+            <hr>
+        {% endfor %}
+    </ul>
+{% endblock %}
